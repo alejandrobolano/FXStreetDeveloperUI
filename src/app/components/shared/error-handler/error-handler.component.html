@@ -1,0 +1,16 @@
+<ng-container *ngIf="errors.length > 0">
+  <section *ngFor="let error of errors" id="nlg7rxdft0" class=" overflow-hidden bg-primary bg-opacity-100" style="
+    margin: 1rem;
+    border-radius: 10px;">
+    <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="relative" style="padding: 10px;">
+        <blockquote>
+          <div class="max-w-l mx-auto font-bold text-center text-white  text-shadow-sm">
+            <p> {{error}} </p>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+</ng-container>
+

@@ -1,0 +1,45 @@
+<fx-error-handler></fx-error-handler>
+
+<div id="app" style="height: auto">
+  <div>
+    <div class="site-content bg-white overflow-hidden" data-testid="site-content">
+
+      <section class="relative pt-16 pb-32 overflow-hidden bg-white space-y-24">
+
+        <fx-left-side
+        [image-url]="'https://stories.freepiklabs.com/storage/2467/Football-Goal-PANA-01.svg'"
+        [alt]="'Red cards'">
+
+          <fx-red-cards></fx-red-cards>
+
+        </fx-left-side>
+
+        <fx-right-side
+          [image-url]="'https://stories.freepiklabs.com/storage/13287/395-Soccer_Artboard-1.svg'"
+          [alt]="'Yellow cards'">
+
+          <fx-yellow-cards></fx-yellow-cards>
+
+        </fx-right-side>
+
+        <fx-left-side
+          [image-url]="'https://stories.freepiklabs.com/storage/2565/276-Missed-chances_Artboard-1.svg'"
+          [alt]="'Minutes'">
+
+          <div>
+            <h2 class="text-4xl font-extrabold tracking-tight text-gray-900">Minutos<span
+              class="text-primary">.</span></h2>
+            <p class="mt-4 text-lg leading-relaxed text-gray-500 sm:text-xl">Viva la emoción del footbal en
+              cuestiones de minutos.</p>
+          </div>
+
+        </fx-left-side>
+
+      </section>
+    </div>
+  </div>
+
+  <fx-footer></fx-footer>
+</div>
+
+
