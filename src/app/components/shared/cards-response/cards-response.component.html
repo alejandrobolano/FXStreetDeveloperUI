@@ -1,0 +1,25 @@
+<table *ngIf="cards?.length > 0" class="mt-8">
+  <thead>
+  <tr class="text-xl font-extrabold text-primary">
+    <th>Id</th>
+    <th>Name</th>
+    <th>Team Name</th>
+    <th>Total</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let card of cards"
+      class="text-lg font-medium">
+    <td>{{card.id}}</td>
+    <td>{{card.name}}</td>
+    <td>{{card.teamName}}</td>
+    <td>{{card.total}}</td>
+    <td>
+<!--      <button type="button" id="details" class="ui-button ui-button-base ui-button-primary">Button-->
+<!--      </button>-->
+    </td>
+    <td>
+  </tr>
+  </tbody>
+</table>
