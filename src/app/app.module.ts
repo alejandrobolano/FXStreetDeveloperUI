@@ -11,6 +11,7 @@ import { RightSideComponent } from './components/layout/right-side/right-side.co
 import { YellowCardsComponent } from './components/yellow-cards/yellow-cards.component';
 import { RedCardsComponent } from './components/red-cards/red-cards.component';
 import { ErrorHandlerComponent } from './components/shared/error-handler/error-handler.component';
+import { LoaderComponent } from './components/layout/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ErrorHandlerComponent } from './components/shared/error-handler/error-h
     RightSideComponent,
     YellowCardsComponent,
     RedCardsComponent,
-    ErrorHandlerComponent
+    ErrorHandlerComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
