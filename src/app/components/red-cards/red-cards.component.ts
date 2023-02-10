@@ -21,13 +21,14 @@ export class RedCardsComponent implements OnInit {
   }
 
   private getRedCards = () => {
-    this.repository.getRedCards().subscribe(response => {
+    this.repository.getRedCards().subscribe((response) => {
         this.cards = response as Card[];
         this.cards.sort((c1, c2) => c1.teamName > c2.teamName ? 1 : -1);
         this.loader.loader$.next(false);
       },
       (error) => {
         this.errorHandler.handleError(error);
+        this.loader.loader$.next(false);
       });
   }
 

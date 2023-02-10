@@ -28,6 +28,7 @@ export class YellowCardsComponent implements OnInit {
       },
       (error) => {
         this.errorHandler.handleError(error);
+        this.loader.loader$.next(false);
       });
   }
 
