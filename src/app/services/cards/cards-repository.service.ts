@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Card} from '../../models/Card';
 import {RepositoryService} from '../api/repository.service';
-import {ApiAddress} from '../../models/ApiAddress';
+import {ApiAddress} from '../../helper/ApiAddress';
 import {Observable} from 'rxjs';
 
 @Injectable({
